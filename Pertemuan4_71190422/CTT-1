@@ -1,2 +1,0 @@
-Var --> tidak thread safe, karena bisa diubah oleh siapapun
-Val --> thread safe, tidak bisa diubah nilainya
