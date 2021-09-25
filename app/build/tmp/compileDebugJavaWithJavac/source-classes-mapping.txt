@@ -1,2 +1,0 @@
-ac/id/ukdw/pertemuan4_71190422/BuildConfig.java
- ac.id.ukdw.pertemuan4_71190422.BuildConfig
