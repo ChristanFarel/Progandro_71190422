@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,11 +15,18 @@ class MainActivity : AppCompatActivity() {
         val username = findViewById<EditText>(R.id.edtTextUserName)
         val pass = findViewById<EditText>(R.id.edtTextPassword)
         val btnLog = findViewById<Button>(R.id.btnLogin)
+        val peringatan = findViewById<TextView>(R.id.txtPeringatan)
 
         btnLog.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            intent.putExtra("nama",username.text.toString())
-            startActivity(intent)
+            if (pass.text.toString().equals("1234")){
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.putExtra("nama",username.text.toString())
+                startActivity(intent)
+            } else{
+                peringatan.text = "Password anda salah!"
+            }
+
+
 
         }
     }

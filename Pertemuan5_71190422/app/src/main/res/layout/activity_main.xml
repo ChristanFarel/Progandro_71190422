@@ -123,4 +123,20 @@
         app:layout_constraintTop_toBottomOf="@+id/edtTextPassword"
         app:layout_constraintVertical_bias="0.157" />
 
+    <TextView
+        android:id="@+id/txtPeringatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:fontFamily="@font/robotoregular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
