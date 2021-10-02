@@ -13,15 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f792623-515c-47f2-a895-ea6186d4d010" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_undraw_book_lover_mkck.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/font.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/robotoregular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/app/src/main/res/drawable-v24/ic_undraw_book_lover_mkck.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/app/src/main/res/font/font.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan5_71190422/app/src/main/res/font/robotoregular.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ac/id/ukdw/pertemuan4_71190422/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ac/id/ukdw/pertemuan4_71190422/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
