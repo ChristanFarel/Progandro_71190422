@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("nama",username.text.toString())
                 startActivity(intent)
             } else{
-                peringatan.text = "Password anda salah!"
+                pass.error = "Password anda salah"
+//                peringatan.text = "Password anda salah!"
             }
 
 
