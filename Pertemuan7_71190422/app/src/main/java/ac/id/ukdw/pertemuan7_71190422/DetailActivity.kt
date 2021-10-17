@@ -14,11 +14,14 @@ class DetailActivity: AppCompatActivity() {
         val nama = intent.getStringExtra("nama")
         val nomer = intent.getStringExtra("nomer")
         val gambar = intent.getIntExtra("gambar",0)
+        val email = intent.getStringExtra("email")
         val txtNama: TextView = findViewById(R.id.txtnama)
         val txtNomer: TextView = findViewById(R.id.txtnomer)
+        val txtEmail: TextView = findViewById(R.id.txtEmail)
         val img: ImageView = findViewById(R.id.imgKontak)
         txtNama.text =  nama
         txtNomer.text = nomer
+        txtEmail.text = email
         img.setImageResource(gambar)
     }
 
