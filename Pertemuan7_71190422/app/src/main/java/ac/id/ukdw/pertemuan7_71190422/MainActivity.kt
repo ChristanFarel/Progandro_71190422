@@ -14,17 +14,16 @@ class MainActivity : AppCompatActivity(), OnClick {
         setContentView(R.layout.activity_main)
 
 //        val listKontak = arrayListOf<Kontak>()
-        listKontak.add(Kontak(nama= "Christan Farel Pamungkas", nomer= "085701708030", R.mipmap.ic_launcher, email="farel@gmail.com"))
-        listKontak.add(Kontak(nama= "Revyn Pradana Putra", nomer= "081395315404", R.mipmap.ic_launcher, email = "revyn@gmail.com"))
-        listKontak.add(Kontak(nama= "Yohanes Yonathan Pratama", nomer= "085029809182", R.mipmap.ic_launcher, email = "yohanes@gmail.com"))
-        listKontak.add(Kontak(nama= "Sindu Putra Sumbogo", nomer= "081098038342", R.mipmap.ic_launcher, email = "sindu@gmail.com"))
-        listKontak.add(Kontak(nama= "Ginting Lukaku", nomer= "087012389032", R.mipmap.ic_launcher, email = "ginting@gail.com"))
+        listKontak.add(Kontak(nama= "Christan Farel Pamungkas", nomer= "085701708030", R.mipmap.farel, email="farel@gmail.com"))
+        listKontak.add(Kontak(nama= "Revyn Pradana Putra", nomer= "081395315404", R.mipmap.vito, email = "revyn@gmail.com"))
+        listKontak.add(Kontak(nama= "Yohanes Yonathan Pratama", nomer= "085029809182", R.mipmap.yonathan, email = "yohanes@gmail.com"))
+        listKontak.add(Kontak(nama= "Sindu Putra Sumbogo", nomer= "081098038342", R.mipmap.harris, email = "sindu@gmail.com"))
+        listKontak.add(Kontak(nama= "Ginting Lukaku", nomer= "087012389032", R.mipmap.revyn, email = "ginting@gmail.com"))
 
         val rv = findViewById<RecyclerView>(R.id.rvKontak)
         rv.layoutManager = LinearLayoutManager(this)
         val adapter = KontakAdapter(listKontak,this,this)
         rv.adapter = adapter
-
 
     }
 
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity(), OnClick {
         intent.putExtra("nama",listKontak[position].nama)
         intent.putExtra("nomer",listKontak[position].nomer)
         intent.putExtra("email",listKontak[position].email)
-//        intent.putExtra("gambar",listKontak[position].gambar)
+        intent.putExtra("gambar",listKontak[position].gambar)
         startActivity(intent)
     }
 }
