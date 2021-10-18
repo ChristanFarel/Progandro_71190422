@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(), OnClick {
         listKontak.add(Kontak(nama= "Yohanes Yonathan Pratama", nomer= "085029809182", R.mipmap.yonathan, email = "yohanes@gmail.com"))
         listKontak.add(Kontak(nama= "Sindu Putra Sumbogo", nomer= "081098038342", R.mipmap.harris, email = "sindu@gmail.com"))
         listKontak.add(Kontak(nama= "Ginting Lukaku", nomer= "087012389032", R.mipmap.revyn, email = "ginting@gmail.com"))
+        listKontak.add(Kontak(nama= "Abiel Putra Pratama", nomer= "085091230123", R.mipmap.abiel, email = "ginting@gmail.com"))
 
         val rv = findViewById<RecyclerView>(R.id.rvKontak)
         rv.layoutManager = LinearLayoutManager(this)
