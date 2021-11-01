@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = PagerAdapter(this,listFragment)
 
         viewPager.adapter = adapter
-        viewPager.setCurrentItem(1)
+        viewPager.setCurrentItem(0)
     }
 
     class PagerAdapter(val activity: AppCompatActivity, val listFragment: ArrayList<Fragment>): FragmentStateAdapter(activity) {
