@@ -1,4 +1,3 @@
 package ac.id.ukdw.pertemuan11_71190422
 
-class Mahasiswa {
-}
+data class Mahasiswa (val nim: String, val nama: String, val ipk: Double)
