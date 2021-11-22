@@ -37,30 +37,104 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCariNIM.setOnClickListener {
+            if(rbASC.isChecked){
+                fireStore?.collection("mahasiswa")
+                    ?.orderBy("nim",Query.Direction.ASCENDING)
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
+                    }
+            } else if (rbDSC.isChecked){
+                fireStore?.collection("mahasiswa")
+                    ?.orderBy("nim",Query.Direction.DESCENDING)
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
+                    }
+            }
+
                 fireStore?.collection("mahasiswa")?.whereEqualTo("nim",edtNIM.text.toString())
                     ?.get()!!
-                .addOnSuccessListener { doc ->
-                    var output = ""
-                    for(d in doc){
-                        output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
                     }
-                    txtHasil.setText(output)
-                }
+
+
         }
 
         btnCariNama.setOnClickListener {
-            fireStore?.collection("mahasiswa")?.whereEqualTo("nama",edtNama.text.toString())
-                ?.get()!!
-                .addOnSuccessListener { doc ->
-                    var output = ""
-                    for(d in doc){
-                        output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+            if(rbASC.isChecked){
+                fireStore?.collection("mahasiswa")
+                    ?.orderBy("nama",Query.Direction.ASCENDING)
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
                     }
-                    txtHasil.setText(output)
-                }
+            }else if (rbDSC.isChecked){
+                fireStore?.collection("mahasiswa")
+                    ?.orderBy("nama",Query.Direction.DESCENDING)
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
+                    }
+            }
+                fireStore?.collection("mahasiswa")?.whereEqualTo("nama",edtNama.text.toString())
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
+                    }
+
+
         }
 
         btnCariIPK.setOnClickListener {
+            if(rbASC.isChecked){
+                fireStore?.collection("mahasiswa")
+                    ?.orderBy("ipk",Query.Direction.ASCENDING)
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
+                    }
+            }else if (rbDSC.isChecked){
+                fireStore?.collection("mahasiswa")
+                    ?.orderBy("ipk",Query.Direction.DESCENDING)
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
+                    }
+            }
             fireStore?.collection("mahasiswa")?.whereEqualTo("ipk",edtIPK.text.toString().toDouble())
                 ?.get()!!
                 .addOnSuccessListener { doc ->
@@ -71,6 +145,8 @@ class MainActivity : AppCompatActivity() {
                     txtHasil.setText(output)
                 }
         }
+
+
 
 
 
