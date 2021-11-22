@@ -97,6 +97,16 @@ class MainActivity : AppCompatActivity() {
                         }
                         txtHasil.setText(output)
                     }
+            }else{
+                fireStore?.collection("mahasiswa")?.whereEqualTo("nama",edtNama.text.toString())
+                    ?.get()!!
+                    .addOnSuccessListener { doc ->
+                        var output = ""
+                        for(d in doc){
+                            output += "\n${d["nim"]} , ${d["nama"]}, ${d["ipk"]}"
+                        }
+                        txtHasil.setText(output)
+                    }
             }
                 fireStore?.collection("mahasiswa")?.whereEqualTo("nama",edtNama.text.toString())
                     ?.get()!!
