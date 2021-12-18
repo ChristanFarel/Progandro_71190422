@@ -2,6 +2,7 @@ package com.example.final_71190422
 
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.tasks.OnCompleteListener
 import  com.google.firebase.auth.AuthResult
@@ -12,6 +13,7 @@ import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -47,7 +49,7 @@ class LoginActivity : AppCompatActivity() {
         //Instance dari Firebase Autentication
         mAuth = FirebaseAuth.getInstance()
 
-        val signInGoogle: Button = findViewById(R.id.btnLoginGoogle)
+        val signInGoogle: com.google.android.gms.common.SignInButton = findViewById(R.id.btnLoginGoogle)
 
         signInGoogle.setOnClickListener {
             signIn()
@@ -79,11 +81,11 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-
     private fun signIn() {
         val signInIntent = googleSignInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

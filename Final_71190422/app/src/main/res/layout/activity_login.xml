@@ -37,7 +37,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
-        android:hint="Email" />
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txtInputPass"
@@ -47,7 +48,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
-        android:hint="Password" />
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
 
     <Button
         android:id="@+id/btnLogin"

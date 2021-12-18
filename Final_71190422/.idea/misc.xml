@@ -4,7 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/drawable/ic_undraw_book_lover_mkck.xml" value="0.2203125" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/activity_cari_data.xml" value="0.20416666666666666" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/activity_hapus.xml" value="0.20416666666666666" />
         <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/activity_tambah.xml" value="0.20416666666666666" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/activity_update.xml" value="0.20416666666666666" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/activity_view.xml" value="0.19010416666666666" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/layout/penduduk_view.xml" value="0.33" />
+        <entry key="..\:/Kuliah/SEMESTER 5/ProgAndro/WindowsProgAndro/Progandro_71190422/Final_71190422/app/src/main/res/menu/btm_navbar.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
