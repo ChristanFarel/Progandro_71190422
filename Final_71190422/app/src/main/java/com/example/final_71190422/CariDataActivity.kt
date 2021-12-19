@@ -31,7 +31,7 @@ class CariDataActivity : AppCompatActivity() {
                     ?.get()?.addOnSuccessListener {
                         var hasil = ""
                         for (document in it) {
-                            hasil += "No KTP: ${document.data["noKTP"]} \n Nama: ${document.data["nama"]}"
+                            hasil += "No KTP : ${document.data["noKTP"]} \nNama    : ${document.data["nama"]}\nAgama  : ${document.data["agama"]}\n\n"
                         }
                         txtHasil.setText(hasil)
                     }
@@ -41,7 +41,7 @@ class CariDataActivity : AppCompatActivity() {
                     ?.get()?.addOnSuccessListener {
                         var hasil = ""
                         for (document in it) {
-                            hasil += "No KTP: ${document.data["noKTP"]} \n Nama: ${document.data["nama"]}"
+                            hasil += "No KTP : ${document.data["noKTP"]} \nNama    : ${document.data["nama"]}\nAgama  : ${document.data["agama"]}\n\n"
                         }
                         txtHasil.setText(hasil)
                     }
@@ -54,7 +54,7 @@ class CariDataActivity : AppCompatActivity() {
                     ?.get()?.addOnSuccessListener {
                         var hasil = ""
                         for (document in it) {
-                            hasil += "No KTP: ${document.data["noKTP"]}\nNama: ${document.data["nama"]}\nAgama: ${document.data["agama"]}\n"
+                            hasil += "No KTP : ${document.data["noKTP"]}\nNama    : ${document.data["nama"]}\nAgama   : ${document.data["agama"]}\n\n"
                         }
                         txtHasil.setText(hasil)
                     }

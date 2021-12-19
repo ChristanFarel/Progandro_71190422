@@ -43,13 +43,15 @@ class UpdateActivity : AppCompatActivity() {
                         }
                     }?.addOnSuccessListener {
                         Toast.makeText(this,"Update Berhasil!",Toast.LENGTH_SHORT).show()
+                        edtTxtAgamaBaru.setText("")
+                        edtTxtNamaBaru.setText("")
                     }
             }else{
                 Toast.makeText(this,"Semua Field harus terisi!",Toast.LENGTH_SHORT).show()
             }
-            edtTxtAgamaBaru.setText("")
-            edtTxtNamaBaru.setText("")
         }
+
+
 
         val btmNavbar: BottomNavigationView = findViewById(R.id.btmNav)
 

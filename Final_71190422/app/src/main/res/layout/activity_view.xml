@@ -10,8 +10,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcy"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         tools:listitem="@layout/penduduk_view"
+        android:layout_above="@+id/btmNav"
         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

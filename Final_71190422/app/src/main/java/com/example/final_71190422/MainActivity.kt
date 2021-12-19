@@ -19,17 +19,21 @@ import android.content.Intent
 import android.util.Log
 import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.firestore.FirebaseFirestore
 
 
 class MainActivity : AppCompatActivity() {
-
+    lateinit var user: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+         user = FirebaseAuth.getInstance()
+
         val btnTambah: Button = findViewById(R.id.btnTambah)
         val btnView: Button = findViewById(R.id.btnView)
         val btnCari: Button = findViewById(R.id.btnCari)
+        val btnLogout: Button = findViewById(R.id.btnLogout)
 
         btnTambah.setOnClickListener {
             val intent1 = Intent(this,TambahActivity::class.java)
@@ -45,6 +49,12 @@ class MainActivity : AppCompatActivity() {
         btnCari.setOnClickListener {
             val intent5 = Intent(this, CariDataActivity::class.java)
             startActivity(intent5)
+        }
+
+        btnLogout.setOnClickListener {
+            user.signOut()
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }
 
         val btmNavbar: BottomNavigationView = findViewById(R.id.btmNav)

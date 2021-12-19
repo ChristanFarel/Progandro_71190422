@@ -83,6 +83,7 @@
         android:textSize="20sp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:textColor="@color/black"
         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

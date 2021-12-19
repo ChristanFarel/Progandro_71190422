@@ -7,10 +7,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
-import org.w3c.dom.Text
+
 
 class PendudukAdapter(private  val listPenduduk: ArrayList<Penduduk>): RecyclerView.Adapter<PendudukAdapter.PendudukViewHolder>() {
 
@@ -38,10 +37,10 @@ class PendudukAdapter(private  val listPenduduk: ArrayList<Penduduk>): RecyclerV
                     ?.get()?.addOnSuccessListener {
                         for (document in it){
                             fireStore?.collection("penduduk")?.document(document.id)?.delete()
-                                ?.addOnSuccessListener {
-                                    Toast.makeText(itemView.context,"Berhasil dihapus!",Toast.LENGTH_SHORT).show()
-                                }
                         }
+                        Toast.makeText(itemView.context,"Berhasil dihapus!",Toast.LENGTH_SHORT).show()
+                        itemView.context.startActivity(Intent(itemView.context, ViewActivity::class.java))
+                        (itemView.context as ViewActivity).finish()
                     }?.addOnFailureListener {
                         Toast.makeText(itemView.context,"Gagal dihapus!",Toast.LENGTH_SHORT).show()
                     }

@@ -58,6 +58,7 @@ class TambahActivity : AppCompatActivity() {
                 Toast.makeText(this,"Nomor KTP dan Nama tersimpan!",Toast.LENGTH_SHORT).show()
                 edtTxtKTP.setText("")
                 edtTxtNama.setText("")
+                edtTxtAgama.setText("")
             }
         }
 

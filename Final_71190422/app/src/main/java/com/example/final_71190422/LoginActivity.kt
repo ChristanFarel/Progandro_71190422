@@ -48,6 +48,7 @@ class LoginActivity : AppCompatActivity() {
 
         //Instance dari Firebase Autentication
         mAuth = FirebaseAuth.getInstance()
+        cekSession()
 
         val signInGoogle: com.google.android.gms.common.SignInButton = findViewById(R.id.btnLoginGoogle)
 
@@ -80,6 +81,13 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    private fun cekSession(){
+        val user = mAuth.currentUser
+        if(user != null){
+            startActivity(Intent(this, MainActivity::class.java ))
+            finish()
+        }
+    }
 
     private fun signIn() {
         val signInIntent = googleSignInClient.signInIntent
